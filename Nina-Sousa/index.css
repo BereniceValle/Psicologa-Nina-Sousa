@@ -1,0 +1,17 @@
+body {
+color:black;
+background-color: #fdefdf;
+font-family: Droid Serif; better toggether condens;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}

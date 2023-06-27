@@ -12,7 +12,12 @@ ul {
     align-items: center;
     padding: 16px;
 }
-
+img {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
+}
 /*background-color: white;
 width: 500px;
 margin: auto;

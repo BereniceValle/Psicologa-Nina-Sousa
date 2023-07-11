@@ -5,6 +5,24 @@ font-family: Droid Serif;
 margin-right: 20px;
 margin-left: 20px;
 }
+/* #fdefdf; bege claro
+    #eda53f; mostarda
+    #825136; verde militar
+    #686139; marron
+    #ea9c82: rosa
+*/
+h1{
+    color: #825136
+}
+h2 {
+    color: #ea9c82
+}
+h3 {
+    color: #eda53f
+}
+h4 {
+    color: #686139
+}
 ul {
     display: flex;
     justify-content: space-between;

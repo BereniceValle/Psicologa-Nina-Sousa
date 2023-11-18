@@ -1,0 +1,197 @@
+/*
+#e1cedd rgba(225, 206, 221, 1) 
+#694073 rgba(105, 64, 115, 1)
+#996aab rgba(153, 106, 171, 1)
+#c4e1f2 rgba(196, 225, 242, 1)
+#3ea8a8 rgba(62, 168, 168, 1)
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(35px, 3.1vw); /* já fica responsivo*/
+}
+
+h2{
+    font-family: sans-serif;
+    text-shadow: 4px 4px 6px #000;
+    color: #c4e1f2;
+    font-weight: 600;
+    font-size: max(20px, 1.8vw); /* já fica responsivo*/
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-shadow: 4px 4px 6px #000; */
+    color: #694073;
+    font-weight: 600;
+    font-size:max(35px, 3.1vw);
+}
+/*-------  Botão chamada  -------*/
+div.chamada a{
+    font-size: max(16px, 1.8vw); /*já deixa a fonte responsiva*/
+    color: #694973;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(225, 206, 221, 1) 0%, rgba(196, 225, 242, 1) 50%, rgba(62, 168, 168, 1) 100%);
+    
+    display: inline-block;
+}
+
+div.chamada a:hover{
+    opacity: .8;
+}
+
+/*-------  Elementos do header  -------*/
+header{
+    width: 100%;
+    height: 50vw;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1) ), url('../imagens/capaFundo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/*-------  Elementos do nav  -------*/
+header nav#nav-esquerda{
+    width: 100%;
+    height: 150px;
+    display: flex;/* coloca um do lado do outro*/
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between; /*move "menu" para canto direito */
+}
+
+header nav#nav-esquerda div#logo{
+    width: 100px;
+    height: 120px;
+    margin-left: 4rem;
+    text-align: center;
+}
+
+header nav#nav-esquerda div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header nav#nav-esquerda div#logo p{
+    color: #fff;
+    text-shadow: 4px 6px 10px #e1cedd; /*sombreamento*/
+}
+
+/*-------  Menu hamburguer  -------*/
+
+header nav#nav-esquerda ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color:#fff;
+    margin-right: 2rem;
+}
+
+/*-------  Menu principal  -------*/
+
+header nav#nav-esquerda ul.menu-principal{
+    margin-left: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 100%;
+    text-shadow: 4px 6px 10px #e1cedd; /*sombreamento*/
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover{
+    opacity: .6;
+    border-bottom: 1px solid #3ea8a8;
+}
+
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div.chamada h1{
+    color: #c4e1f2;
+}
+
+header div.chamada h2{
+    color: #e1cedd;
+}
+
+/*-------  Elementos do tratamento  -------*/
+
+section.tratamento{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.tratamento div.tratamento-mestre{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.tratamento div.tratamento-mestre div.tratamento-texto{
+    padding-top: 20px;
+    line-height: 1.8; /*espaçamento estre as linhas do texto, use entre 1.8 a 2 */
+
+}
+
+/*-------  Elementos do tratamento  -------*/
+section.depoimentos{
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    background-color: #c4e1f2;
+    text-align: center;
+}
+
+section.depoimentos div.depoimentos-mestre{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+section.depoimentos div.depoimentos-mestre img{
+    border: 2px solid #694073;
+}

@@ -1,0 +1,47 @@
+
+/*-------  NaveBar -------*/
+@media screen and (max-width: 1110px){
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 970px){
+    header nav#nav-esquerda div#logo{
+        margin-left: 1rem;
+    }
+    /*-------  Menu hanburguer  -------*/
+
+    header nav#nav-esquerda{
+        justify-content: space-between;
+    }
+
+    header nav#nav-esquerda ul#icone-menu{
+        display: flex; /* para desktop ele é "none", aqui é o contrario*/
+    }
+
+    header nav#nav-esquerda ul#icone-menu li#menuX{
+        display: none;
+    }
+    /*-------  Menu principal  -------*/
+
+    header nav#nav-esquerda ul.menu-principal{
+        flex-direction: column;
+        width: 50%;
+        height: 50vh;
+        background: linear-gradient(rgba(225, 206, 221, 1) 60%, rgba(196, 225, 242, 1) 80%, rgba(62, 168, 168, 1) 100%);
+        padding-top: .5rem;
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li{
+        margin: .5rem;
+    }
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 120%;
+        color: #694073;
+    }
+}

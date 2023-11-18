@@ -1,0 +1,337 @@
+/* Color Theme Swatches in Hex extraído do site "https://color.adobe.com/pt/create/color-wheel"
+.Vogue-Paris---Sølve-Sundsbø-1-hex { color: #BF4158; }
+.Vogue-Paris---Sølve-Sundsbø-2-hex { color: #F28A2E; }
+.Vogue-Paris---Sølve-Sundsbø-3-hex { color: #F27127; }
+.Vogue-Paris---Sølve-Sundsbø-4-hex { color: #BF3415; }
+.Vogue-Paris---Sølve-Sundsbø-5-hex { color: #400101; }
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{ /*  serve para tirar a barra de rolagem*/
+    display: none;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;/*Já deixa o texto configurado e responsivo*/
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(44px,5.2vw);
+}
+
+h2{
+    font-family: sans-serif;/*Já deixa o texto configurado e responsivo*/
+    text-shadow: 4px 4px 6px #400101;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+}
+/*-------  Botão chamada  -------*/
+div.chamada a{
+    font-size: max(16px, 1.8vw); /*já deixa a fonte responsiva*/
+    color: #Fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(242, 138, 46, 1) 0%, rgba(242, 113, 39, 1) 50%, rgba(191, 52, 21, 1) 100%);
+    
+    display: inline-block;
+    
+    animation-name: HeaderH2-moverParaCima;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3 ease-in-out;
+}
+
+div.chamada a:hover{
+    opacity: .8;
+}
+
+/*-------  Nav  -------*/
+header nav#nav-esquerda{
+    width: 100%;
+    height: 150px;
+    display: flex;/* coloca um do lado do outro*/
+    flex-flow: row;
+    align-items: center;
+    /*justify-content: space-between; /*(move "menu" para canto direito */
+}
+
+header nav#nav-esquerda div#logo{
+    width: 100px;
+    height: 120px;
+    margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #F27127;
+    opacity: .7;
+}
+/*-------  Menu hamburguer  -------*/
+
+header nav#nav-esquerda ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color:#fff;
+    margin-right: 2rem;
+}
+/*-------  Menu principal  -------*/
+
+header nav#nav-esquerda ul.menu-principal{
+    margin-left: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+    
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 100%;
+    text-shadow: 4px 6px 10px #F27127; /*sombreamento*/
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover{
+    opacity: .6;
+    border-bottom: 1px solid #fff;
+}
+/*-------  Chamada  -------*/
+
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div.chamada h1{
+    color: #fff;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+header div.chamada h2{
+    color: #f28af2;
+    animation-name: HeaderH2-moverParaEsquerda;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+/*-------  sobre  -------*/
+
+section.sobre{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.sobre div.sobre-mestre{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.sobre div.sobre-mestre img{
+    border: 2px solid #f28a2e;
+}
+/*-------  Mulheres merecem  -------*/
+
+section.solucao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: #400101;
+    border-bottom: #400101;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+section.solucao h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 950px;/* px e não % pq já fica responsivo*/
+    text-align: center;
+    color: #Fff;
+    font-size: max(22px, 2.8vw); /* já fica responsivo*/
+}
+
+section.solucao div.solucao-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto{
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.8; /* espaçamento estre as linhas do texto, use entre 1.8 a 2*/
+    margin-bottom: 20px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto p{
+    width: 90%;
+    margin: auto;
+    color: #Fff;
+    text-shadow: 2px 2px 5px #400101;/*funda da letra que ajuda na visualização, px são as posições que vai ocupar na tela */
+    font-size: max(16px, 1vw);
+}
+
+section.solucao div.solucao-mestre div.solucao-img{
+    max-width: 400px;
+}
+
+section.solucao div.solucao-mestre div.solucao-img img{
+    max-width: 100%;/* quer dizer: se comporte o maximo da largura da div pai(que é a "solucao-img)*/
+}
+/*-------  Makes  -------*/
+
+section.make{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 60px;
+}
+
+section.make h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 850px;/* "px" e não "%" pq já fica responsivo*/
+    text-align: center;
+    color: #400101;
+    font-size: max(22px, 2.8vw); /* já fica responsivo*/
+}
+section.makes div.make-conteiner{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*-------  Footer  -------*/
+
+footer{
+    width: 100%;
+    background-color: #F27127;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.logo-footer{
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+footer div.footer-container div.logo-footer img{
+    max-width: 100%;
+}
+
+footer div.footer-container div.footer-info{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    transition: .3s ease-out;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
+    border: 2px solid #e2d4d6;
+}
+
+footer div.footer-container div.footer-info div.cartoes{
+    display: flex;
+    flex-direction: column; /* para imagem ficar abaixo do texto*/
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.footer-info div.cartoes span{
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: max(16px, 1.5vw);
+    margin-top: 15px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
+    max-width: 340px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img{
+    max-width: 100%;
+}
+
+footer span.autorais{
+    color: #fff;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
+}

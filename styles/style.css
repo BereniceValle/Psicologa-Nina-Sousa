@@ -16,7 +16,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 4px 4px 6px #000;
     font-weight: 700;
-    font-size: max(35px, 3.1vw); /* já fica responsivo*/
+    font-size: max(20px, 5.2vw); /* já fica responsivo*/
 }
 
 h2{
@@ -24,7 +24,7 @@ h2{
     text-shadow: 4px 4px 6px #000;
     color: #c4e1f2;
     font-weight: 600;
-    font-size: max(20px, 1.8vw); /* já fica responsivo*/
+    font-size: max(15px, 2.8vw); /* já fica responsivo*/
 }
 
 h3{
@@ -32,15 +32,15 @@ h3{
     /* text-shadow: 4px 4px 6px #000; */
     color: #694073;
     font-weight: 600;
-    font-size:max(35px, 3.1vw);
+    font-size:max(30px, 3.1vw);
 }
 /*-------  Botão chamada  -------*/
 div.chamada a{
-    font-size: max(16px, 1.8vw); /*já deixa a fonte responsiva*/
+    font-size: max(15px, 1.8vw); /*já deixa a fonte responsiva*/
     color: #694973;
     text-decoration: none;
     padding: 10px 40px;
-    border-radius: 50px;
+    border-radius: 40px;
     font-weight: 600;
     background: linear-gradient(rgba(225, 206, 221, 1) 0%, rgba(196, 225, 242, 1) 50%, rgba(62, 168, 168, 1) 100%);
     
@@ -54,7 +54,7 @@ div.chamada a:hover{
 /*-------  Elementos do header  -------*/
 header{
     width: 100%;
-    height: 50vw;
+    height: max(650px, 1vw);
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1) ), url('../imagens/capaFundo.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -133,13 +133,14 @@ header nav#nav-esquerda ul.menu-principal li a:hover{
     opacity: .6;
     border-bottom: 1px solid #3ea8a8;
 }
+/*-------  Chamada  -------*/
 
 header div.chamada{
     position: absolute;
-    width: 100%;
-    height: 300px;
+    width: 80%;
+    height: max(20px, 1vw);;
     text-align: center;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -157,7 +158,7 @@ header div.chamada h2{
 section.tratamento{
     max-width: 100%;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
@@ -175,7 +176,7 @@ section.tratamento div.tratamento-mestre div.tratamento-texto{
 
 }
 
-/*-------  Elementos do tratamento  -------*/
+/*-------  Elementos do depoimento  -------*/
 section.depoimentos{
     max-width: 100%;
     padding-top: 20px;
@@ -194,4 +195,20 @@ section.depoimentos div.depoimentos-mestre{
 
 section.depoimentos div.depoimentos-mestre img{
     border: 2px solid #694073;
+}
+
+/*-------  Elementos do blog  -------*/
+section.blog{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section.blog div.blog-mestre{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

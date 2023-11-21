@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/animacao.css">
 
 
 </head>
@@ -93,85 +94,95 @@
         </section>
         <section class="blog">
             <h3>Blog</h3>
-            <div clas="blog-mestre">
-                <div class="row mb-2">
-                    <div class="col-md-6">
-                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                          <h3 class="mb-0">Featured post</h3>
-                          <div class="mb-1 text-body-secondary">Nov 12</div>
-                          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                            Continue reading
-                            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                          </a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                          <h3 class="mb-0">Post title</h3>
-                          <div class="mb-1 text-body-secondary">Nov 11</div>
-                          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                            Continue reading
-                            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                          </a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                          <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-body-secondary">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                              Continue reading
-                              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                            </a>
-                          </div>
-                          <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                          <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <div class="mb-1 text-body-secondary">Nov 11</div>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                              Continue reading
-                              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                            </a>
-                          </div>
-                          <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                          </div>
-                        </div>
+            <div class="blog-mestre">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="blog-img">
+                    <img src="./imagens/abraceSuaJornada.jpg" width="250"
+                    height="250" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
                   </div>
-                
+                  <div class="blog-texto">
+                    <p>
+                      Abrace a sua jornada e valorize o seu próprio progresso!
+                    </p>
+                    <a href="blog.html">Ler...</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="blog-img">
+                    <img src="./imagens/psicoterapiaOnline.jpg" width="250"
+                    height="250" role="img" aria-label="Placeholder:"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                  <div class="blog-texto">
+                    <p>
+                      Psicoterapia Online: como funciona e quais as vantagens.
+                    </p>
+                    <a href="blog.html">Leia mais...</a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3">
+                    <div class="blog-img">
+                      <img src="./imagens/tratarAnsiedade.jpg" width="250"
+                      height="250" role="img" aria-label="Placeholder:"
+                      preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+                    <div class="blog-texto">
+                      <p>
+                        O que é essencial para tratar ansiedade?
+                      </p>
+                      <a href="blog.html">Leia mais...</a>
+                    </div>
+                </div>
+      
+                <div class="col-lg-3">
+                    <div class="blog-img">
+                      <img src="./imagens/tiposDeTerapia.jpg" width="250"
+                      height="250" role="img" aria-label="Placeholder:"
+                      preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+                    <div class="blog-texto">
+                      <p>
+                        Qual é o melhor tipo de terapia?
+                      </p>
+                      <a href="blog.html">Leia mais...</a>
+                    </div>
+                </div>
+              </div>
             </div>
         </section>
-        <section class="instagran"></section>
+        <section class="instagran">
+          <h3>Instagran</h3>
+          <div class="instagran-mestre">
+            <div></div>
+          
+          </div>
+        </section>
         <section class="contato"></section>
     </main>
-    <footer></footer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href=" https://wa.me/5531992965828" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    <footer>
+      
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"
+        integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA=="
+        crossorigin="anonymous"></script>
+
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
    
     <script src="./scripts/script.js"></script>

@@ -52,7 +52,8 @@ div.chamada a:hover{
 }
 
 /*-------  Elementos do header  -------*/
-header{
+
+header{ /*página inicial*/
     width: 100%;
     height: max(650px, 1vw);
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1) ), url('../imagens/capaFundo.png');
@@ -63,8 +64,13 @@ header{
     position: relative;
 }
 
+/*-------  Elementos do header-sobre  -------*/
+.header-sobre{
+    height: max(150px, 1vw);
+    background: #3ea8a8;
+}
 /*-------  Elementos do nav  -------*/
-header nav#nav-esquerda{
+nav.nav-esquerda{
     width: 100%;
     height: 150px;
     display: flex;/* coloca um do lado do outro*/
@@ -73,34 +79,34 @@ header nav#nav-esquerda{
     justify-content: space-between; /*move "menu" para canto direito */
 }
 
-header nav#nav-esquerda div#logo{
+nav.nav-esquerda div.logo{
     width: 100px;
     height: 120px;
     margin-left: 4rem;
     text-align: center;
 }
 
-header nav#nav-esquerda div#logo img{
+nav.nav-esquerda div.logo img{
     max-width: 100%;
     max-height: 100%;
 }
 
-header nav#nav-esquerda div#logo p{
+nav.nav-esquerda div.logo p{
     color: #fff;
     text-shadow: 4px 6px 10px #e1cedd; /*sombreamento*/
 }
 
 /*-------  Menu hamburguer  -------*/
 
-header nav#nav-esquerda ul#icone-menu{
+nav.nav-esquerda ul.icone-menu{
     display: none;
 }
 
-header nav#nav-esquerda ul#icone-menu li{
+nav.nav-esquerda ul.icone-menu li{
     list-style: none;
 }
 
-header nav#nav-esquerda ul#icone-menu li ion-icon{
+nav.nav-esquerda ul.icone-menu li ion-icon{
     font-size: 50px;
     color:#fff;
     margin-right: 2rem;
@@ -108,19 +114,19 @@ header nav#nav-esquerda ul#icone-menu li ion-icon{
 
 /*-------  Menu principal  -------*/
 
-header nav#nav-esquerda ul.menu-principal{
+nav.nav-esquerda ul.menu-principal{
     margin-left: 10rem;
     display: flex;
     flex-flow: row wrap;
     color: #fff;
 }
 
-header nav#nav-esquerda ul.menu-principal li{
+nav.nav-esquerda ul.menu-principal li{
     list-style: none;
     margin-right: 2rem;
 }
 
-header nav#nav-esquerda ul.menu-principal li a{
+nav.nav-esquerda ul.menu-principal li a{
     text-decoration: none;
     color: #fff;
     font-size: 100%;
@@ -128,14 +134,13 @@ header nav#nav-esquerda ul.menu-principal li a{
     padding-bottom: 10px;
     transition: .3s ease-in-out;
 }
-
-header nav#nav-esquerda ul.menu-principal li a:hover{
+nav.nav-esquerda ul.menu-principal li a:hover{
     opacity: .6;
     border-bottom: 1px solid #3ea8a8;
 }
 /*-------  Chamada  -------*/
 
-header div.chamada{
+div.chamada{
     position: absolute;
     width: 80%;
     height: max(20px, 1vw);;
@@ -145,11 +150,11 @@ header div.chamada{
     transform: translate(-50%, -50%);
 }
 
-header div.chamada h1{
+div.chamada h1{
     color: #c4e1f2;
 }
 
-header div.chamada h2{
+div.chamada h2{
     color: #e1cedd;
 }
 
@@ -211,4 +216,84 @@ section.blog div.blog-mestre{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+/*-------  Elementos do footer  -------*/
+footer{
+    width: 100%;
+    background-color: #3ea8a8;
+    /* color: #694073; */
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer div.footer-mestre div.logo-footer{
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+footer div.footer-mestre div.logo-footer p{
+    color: #fff;
+    text-shadow: 4px 6px 10px #e1cedd; /*sombreamento*/
+}
+footer div.footer-mestre div.logo-footer img{
+    width: 100%;
+}
+footer div.footer-mestre div.footer-info{
+    width: 60%;
+    /* margin-bottom: 10px; */
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div.footer-mestre div.footer-info nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+footer div.footer-mestre div.footer-info nav.nav-footer ul li{
+    list-style: none;
+}
+footer div.footer-mestre div.footer-info nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    transition: .3s ease-out;
+}
+footer div.footer-mestre div.footer-info nav.nav-footer ul li a:hover{
+    border: 1px solid #e1cedd;
+}
+footer div.footer-mestre div.footer-info div.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+footer div.footer-mestre div.footer-info div.redes-sociais span{
+    font-family: "Roboto", sans-serif;
+    font-size: max(16px, 1.5vw);
+    margin-top: 10px;
+}
+footer div.footer-mestre div.footer-info div.redes-sociais a{
+    color: #694073;
+
+}
+
+footer span.autorais{
+    color: #fff;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
 }

@@ -158,29 +158,58 @@ div.chamada h2{
     color: #e1cedd;
 }
 
-/*-------  Elementos do tratamento  -------*/
+/*-------  Elementos do tratamento/sobre/terapia/blog/contato  -------*/
 
-section.tratamento{
+section.tratamento,
+section.sobre{
     max-width: 100%;
     padding-top: 60px;
     padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
 
+section.sobre div.title{
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-shadow: 4px 4px 6px #000; */
+    color: #694073;
+    background: #c4e1f2;
+    font-weight: 600;
+    font-size:max(30px, 3.1vw);
+}
+
 section.tratamento div.tratamento-mestre{
-    text-align: center;
+    text-align:center;
+    margin-bottom: 40px;
+}
+section.sobre div.sobre-mestre{
+    text-align:justify;
     margin-bottom: 40px;
 }
 
-section.tratamento div.tratamento-mestre div.tratamento-texto{
+section.tratamento div.tratamento-mestre div.tratamento-texto,
+section.sobre div.sobre-mestre div.sobre-texto{
     padding-top: 20px;
     line-height: 1.8; /*espaçamento estre as linhas do texto, use entre 1.8 a 2 */
-
 }
 
+section.sobre div.sobre-mestre div.sobre-texto ul,
+section.sobre div.sobre-mestre div.sobre-texto ol{
+    padding-left: 70px;
+}
+
+section.sobre div.sobre-mestre div.sobre-texto div.blog-img{
+    max-width: 400px;
+}
+
+section.sobre div.sobre-mestre div.sobre-texto div.blog-img img{
+    width: 300px;
+    margin: left;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
+}
 /*-------  Elementos do depoimento  -------*/
 section.depoimentos{
     max-width: 100%;

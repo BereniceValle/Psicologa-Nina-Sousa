@@ -59,7 +59,7 @@
         flex-direction: column;
         width: 50%;
         height: 40vh;
-        background: linear-gradient(rgba(225, 206, 221, 1) 60%, rgba(196, 225, 242, 1) 80%, rgba(62, 168, 168, 1) 100%);
+        background: linear-gradient(rgba(225, 206, 221, 1) 20%, rgba(196, 225, 242, 1) 40%, rgba(62, 168, 168, 1) 100%);
         padding-top: .5rem;
         position: absolute;
         top: 7rem;

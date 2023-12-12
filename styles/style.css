@@ -34,21 +34,39 @@ h3{
     font-weight: 600;
     font-size:max(30px, 3.1vw);
 }
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(20px, 3.5vw);
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c4e1f2;
+    text-shadow: 5px 5px 7px #000;
+    font-weight: 600;
+    font-size: max(15px, 1.9vw);
+}
 /*-------  Botão chamada  -------*/
 div.chamada a{
     font-size: max(15px, 1.8vw); /*já deixa a fonte responsiva*/
     color: #694973;
     text-decoration: none;
+    text-shadow: 4px 4px 6px #fff;
+    margin-top: 60px;
     padding: 10px 40px;
     border-radius: 40px;
     font-weight: 600;
-    background: linear-gradient(rgba(225, 206, 221, 1) 0%, rgba(196, 225, 242, 1) 50%, rgba(62, 168, 168, 1) 100%);
+    background: rgba(62, 168, 168, .9);
     
     display: inline-block;
 }
 
 div.chamada a:hover{
-    opacity: .8;
+    opacity: .7;
 }
 
 /*-------  Elementos do header  -------*/
@@ -82,7 +100,7 @@ nav.nav-esquerda{
 nav.nav-esquerda div.logo{
     width: 100px;
     height: 120px;
-    margin-left: 4rem;
+    margin-left: 3rem;
     text-align: center;
 }
 
@@ -142,21 +160,14 @@ nav.nav-esquerda ul.menu-principal li a:hover{
 
 div.chamada{
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: max(20px, 1vw);;
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-div.chamada h1{
-    color: #c4e1f2;
-}
-
-div.chamada h2{
-    color: #e1cedd;
-}
 
 /*-------  Elementos do tratamento/sobre/terapia/blog/contato  -------*/
 
@@ -269,8 +280,9 @@ footer div.footer-mestre{
 }
 footer div.footer-mestre div.logo-footer{
     width: 100px;
-    cursor: pointer;
+    height: 100px;
     text-align: center;
+    cursor: pointer;
 }
 footer div.footer-mestre div.logo-footer p{
     color: #fff;
@@ -278,6 +290,7 @@ footer div.footer-mestre div.logo-footer p{
 }
 footer div.footer-mestre div.logo-footer img{
     width: 100%;
+    margin-left: 5px;
 }
 footer div.footer-mestre div.footer-info{
     width: 60%;

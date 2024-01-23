@@ -158,7 +158,7 @@ nav.nav-esquerda ul.menu-principal li a:hover{
 }
 /*-------  Chamada  -------*/
 
-div.chamada{
+header div.chamada{
     position: absolute;
     width: 90%;
     height: max(20px, 1vw);;
@@ -168,10 +168,11 @@ div.chamada{
     transform: translate(-50%, -50%);
 }
 
-
 /*-------  Elementos do tratamento/sobre/terapia/blog/contato  -------*/
 
+section.caminho,
 section.tratamento,
+section.sobre-mim,
 section.sobre{
     max-width: 100%;
     padding-top: 60px;
@@ -180,6 +181,16 @@ section.sobre{
     padding-right: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+/* section.caminho,
+section.seguro,
+section.sobre-mim{
+    background-color: #e1cedd;
+} */
+section.tratamento,
+section.depoimentos,
+section.blog{
+    background-color: #c4e1f2;
 }
 
 section.sobre div.title{
@@ -190,7 +201,6 @@ section.sobre div.title{
     font-weight: 600;
     font-size:max(30px, 3.1vw);
 }
-
 section.tratamento div.tratamento-mestre{
     text-align:center;
     margin-bottom: 40px;
@@ -222,14 +232,14 @@ section.sobre div.sobre-mestre div.sobre-texto div.blog-img img{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
 }
 /*-------  Elementos do depoimento  -------*/
-section.depoimentos{
+section.depoimentos,
+section.seguro{
     max-width: 100%;
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
-    background-color: #c4e1f2;
     text-align: center;
 }
 
@@ -270,7 +280,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 footer div.footer-mestre{
     width: 100%;
     display: flex;
@@ -278,6 +287,7 @@ footer div.footer-mestre{
     justify-content: center;
     align-items: center;
 }
+/*
 footer div.footer-mestre div.logo-footer{
     width: 100px;
     height: 100px;
@@ -286,19 +296,19 @@ footer div.footer-mestre div.logo-footer{
 }
 footer div.footer-mestre div.logo-footer p{
     color: #fff;
-    text-shadow: 4px 6px 10px #e1cedd; /*sombreamento*/
+    text-shadow: 4px 6px 10px #e1cedd; /*sombreamento
 }
 footer div.footer-mestre div.logo-footer img{
     width: 100%;
     margin-left: 5px;
-}
+} */
 footer div.footer-mestre div.footer-info{
     width: 60%;
     /* margin-bottom: 10px; */
     padding-top: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 footer div.footer-mestre div.footer-info nav.nav-footer ul{
@@ -333,7 +343,6 @@ footer div.footer-mestre div.footer-info div.redes-sociais a{
     color: #694073;
 
 }
-
 footer span.autorais{
     color: #fff;
     font-size: max(14px, .8vw);
